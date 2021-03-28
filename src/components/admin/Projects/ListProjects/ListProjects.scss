@@ -1,0 +1,48 @@
+@import '../../../../scss/index.scss';
+
+.project-card {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    z-index: -10;
+
+    .card {
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid $border-grey-dark;
+        width: 350px;
+
+        .project-img {
+            border: 8px solid $border-grey-dark;
+        }
+        .project-link {
+            color: $font-dark-light;
+            transition: all .3s ease-in-out;
+            padding: 5px;
+
+            &:hover {
+                color: $primary-color-hover;
+            }
+        }
+
+        .button-container{
+            margin-top: 10px;
+            z-index: 0;
+
+            .edit-btn {
+                margin-right: 5px;
+                color: $font-light;
+                background-color: $success;
+            }
+            .delete-btn {
+                color: $font-light;
+                background-color: $error;
+            }
+        }
+    }
+    
+}
+

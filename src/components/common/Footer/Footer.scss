@@ -1,0 +1,11 @@
+@import '../../../scss/index.scss';
+
+.footer {
+    height: 10vh;
+    background-color: $background-grey-light;
+    text-align: center;
+
+    .year {
+        font-weight: bold;
+    }
+}

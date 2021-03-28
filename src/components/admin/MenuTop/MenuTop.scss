@@ -1,0 +1,33 @@
+@import '../../../scss/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.menu-top {
+    display: flex;
+
+    button {
+        background-color: transparent;
+        color: $font-light;
+        border: 0;
+
+        &:hover {
+            color: $primary-color;
+        }
+        &:focus,
+        &:active {
+            color: $font-light;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 15px;
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+    }
+}

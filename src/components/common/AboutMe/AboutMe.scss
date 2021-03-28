@@ -1,0 +1,133 @@
+@import '../../../scss/index.scss';
+
+.container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .title {
+        text-align: center;
+        color: $font-dark;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        width: 25%;
+    }
+
+    .bio {
+        text-align: justify;
+        font-size: 18px;
+        color: $font-grey;
+    }
+
+    .why-code {
+        margin-top: 25px;
+        color: $font-dark;;
+        text-align: center;
+    }
+
+    .code-paragraph {
+        color: $font-grey;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .section-title {
+        color: $font-dark;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .skills {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 60px;
+
+        .skill h3 {
+            font-size: 24px;
+            color: $font-dark;
+            margin-bottom: 20px;
+        }
+       
+    }
+
+    .interests {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 60px;
+
+        .interest h3 {
+            font-size: 24px;
+            color: $font-dark;
+            margin-bottom: 40px;
+        }
+
+        .interest i {
+            color: $font-grey;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .animated-icon {
+        font-size: 60px;
+        background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 10s infinite linear;
+
+        @keyframes hue {
+            from {
+              -webkit-filter: hue-rotate(0deg);
+            }
+            to {
+              -webkit-filter: hue-rotate(-360deg);
+            }
+          }
+    }
+
+    .studies-exp {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 35px;
+
+        .studies {
+            width: 45%;
+            text-align: center;
+
+            h2 {
+                color: $font-dark;
+            }
+
+            .study {
+                &-title {
+                    color: $font-dark;
+                }
+            }
+        }
+
+        .experience {
+            width: 45%;
+            text-align: center;
+        }
+    }
+
+    .btn {
+        margin: 50px;
+    }
+      
+}
+

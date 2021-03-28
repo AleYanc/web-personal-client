@@ -1,0 +1,56 @@
+@import '../../../scss/index.scss';
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 40%;
+    }
+
+    .menu-web{
+        display: flex;
+
+        &__item {
+            color: white;
+            list-style: none;
+            margin-right: 35px;
+            font-size: 16px;
+            
+            .link {
+                color: white;
+
+                &:hover {
+                    color: $primary-color-hover;
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .social-media{
+        display: flex;
+
+        &__item {
+            color: white;
+            list-style: none;
+            margin-right: 20px;
+            font-size: 20px;
+
+            &:last-of-type {
+                margin-right: 35px;
+            }
+        }
+
+        &__link {
+            color: white;
+
+            &:hover {
+                color: $primary-color-hover;
+            }
+        }
+    }
+}
